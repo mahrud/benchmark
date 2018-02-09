@@ -61,10 +61,18 @@
         <div id="loading">Please wait for libraries to load... <span id="loaded">0</span>/<span id="total"></span></div>
         <div id="container">
             <h1>Big integer benchmarks</h1>
-            Some performance benchmarks for different libraries that do arbitrary precision integer arithmetic. Keep in mind that the results shown here are only a rough estimate of the relative performance and can change significantly from run to run, as well as across different runtime environments.<br />
+            Some performance benchmarks for different libraries that do arbitrary precision integer arithmetic. Keep in mind that the results shown here are only a rough estimate of the relative performance and can change significantly from run to run, as well as across different runtime environments.
 
-            <br />
-            This is based on <a href="https://peterolson.github.io/">Peter Olson</a>'s <a href="https://github.com/peterolson/BigInteger.js/">BigInteger.js</a> <a href="https://peterolson.github.io/BigInteger.js/benchmark/">benchmarks</a>.<br />
+            <br /><br />
+
+            Your browser will get stuck while "waiting for libraries to load." This is due to the fact that some libraries are loaded from non-TLS domains. Asking the browser to "load unsafe scripts" should resolve this.
+
+            <br /><br />
+
+            This is based on <a href="https://peterolson.github.io/">Peter Olson</a>'s <a href="https://github.com/peterolson/BigInteger.js/">BigInteger.js</a> <a href="https://peterolson.github.io/BigInteger.js/benchmark/">benchmarks</a>.
+
+            <br /><br />
+
             <button id="btnRunAll">Run all benchmarks</button>
             <div id="benchmarks"></div>
         </div>
