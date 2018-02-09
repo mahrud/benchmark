@@ -106,13 +106,13 @@ var libraries = (function () {
 
     var libraries = {
         "Peter Olson BigInteger.js": {
-            url: ["../BigInteger.js"],
+            url: ["./peter-olson_BigInteger.js"],
             projectURL: "https://github.com/peterolson/BigInteger.js",
             onStart: createInitialization("bigInt"),
             tests: generateTests(function (x) { return x.replace("parseInt", "bigInt"); })
         },
         "Yaffle BigInteger": {
-            url: ["https://rawgit.com/Yaffle/BigInteger/gh-pages/BigInteger.js"],
+            url: ["./yaffle_BigInteger.js"],
             projectURL: "https://github.com/Yaffle/BigInteger",
             onStart: createInitialization("BigInteger.parseInt"),
             tests: generateTests(function (x) {
@@ -127,7 +127,7 @@ var libraries = (function () {
             }, ["Exponentiation"])
         },
         "Silent Matt BigInteger": {
-            url: ["https://rawgit.com/silentmatt/javascript-biginteger/master/biginteger.js"],
+            url: ["./silent-matt_biginteger.js"],
             projectURL: "http://silentmatt.com/biginteger/",
             onStart: createInitialization("BigInteger.parse"),
             tests: generateTests(function (x) {
@@ -138,7 +138,7 @@ var libraries = (function () {
             })
         },
         "Tom Wu jsbn": {
-            url: ["http://www-cs-students.stanford.edu/~tjw/jsbn/jsbn.js", "http://www-cs-students.stanford.edu/~tjw/jsbn/jsbn2.js"],
+            url: ["./tom-wu_jsbn.js"],
             projectURL: "http://www-cs-students.stanford.edu/~tjw/jsbn/",
             onStart: createInitialization("new BigInteger"),
             tests: generateTests(function (x) {
@@ -149,7 +149,7 @@ var libraries = (function () {
             })
         },
         "Fedor Indutny bn.js": {
-            url: ["https://rawgit.com/indutny/bn.js/master/lib/bn.js"],
+            url: ["./fedor-indutny_bn.js"],
             projectURL: "https://github.com/indutny/bn.js",
             onStart: createInitialization("new BN"),
             tests: generateTests(function (x) {
@@ -160,7 +160,7 @@ var libraries = (function () {
                 .replace("parseInt", "new BN");
             }, ["Exponentiation"])
         },
-        "Artem S Vybornov bignum.js": {
+        "asmCrypto bignum": {
             url: ["./asmcrypto-bignum.js"],
             projectURL: "https://github.com/asmcrypto/asmcrypto.js",
             onStart: createInitialization("asmCrypto.BigNumber.fromNumber"),
@@ -172,7 +172,7 @@ var libraries = (function () {
             }, ["Exponentiation"])
         },
         "MikeMcl bignumber.js": {
-            url: ["https://rawgit.com/MikeMcl/bignumber.js/master/bignumber.min.js"],
+            url: ["./mikemcl_bignumber.js"],
             projectURL: "http://mikemcl.github.io/bignumber.js/",
             onStart: createInitialization("new BigNumber") + "BigNumber.config({POW_PRECISION: 0});",
             tests: generateTests(function (x) {
