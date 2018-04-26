@@ -173,7 +173,7 @@ var libraries = (function () {
         },
         "MikeMcl bignumber.js": {
             url: ["./mikemcl_bignumber.js"],
-            projectURL: "http://mikemcl.github.io/bignumber.js/",
+            projectURL: "https://mikemcl.github.io/bignumber.js/",
             onStart: createInitialization("new BigNumber") + "BigNumber.config({POW_PRECISION: 0});",
             tests: generateTests(function (x) {
                 return x.replace(/\.over/g, ".div")
